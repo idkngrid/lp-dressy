@@ -1,0 +1,36 @@
+/* ====================================== */ 
+/* Headline */ 
+/* ====================================== */ 
+
+.headline {
+  color: var(--dark-blue);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.headline--size-1 { font-size: 3rem }
+.headline--size-2 { font-size: 2.625rem }
+.headline--size-3 { font-size: 1.5rem }
+
+.overtitle {
+  color: var(--dark-blue);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: -.75rem;
+  text-transform: uppercase;
+}
+
+
+
+
+/* ====================================== */ 
+/* Text styles */ 
+/* ====================================== */ 
+
+.text-center  { text-align: center }
+.text-bold    { font-weight: bold }
+.text-lead    { font-size: 1.375rem }
+
+.text-orange  { color: var(--orange) }
+.text-blue    { color: var(--dark-blue) }

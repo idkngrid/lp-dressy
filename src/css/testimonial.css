@@ -1,0 +1,14 @@
+/* ====================================== */ 
+/* Testimonial */ 
+/* ====================================== */ 
+
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.testimonials__author__picture {
+  border-radius: 100%;
+  max-width: 7rem;
+}

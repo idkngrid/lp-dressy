@@ -1,0 +1,135 @@
+/* ====================================== */ 
+/* Menu */ 
+/* ====================================== */ 
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.menu-nav__link {
+  background: none;
+  border: none;
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  text-decoration: none;
+}
+
+.menu-nav__link svg {
+  max-width: 0.9em;
+  display: inline-block;
+}
+
+.menu-brand__link {
+  display: block;
+  max-width: 6rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-brand__link svg {
+  width: 100%;
+}
+
+.menu-toggle {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  color: inherit;
+  position: relative;
+}
+
+.menu-toggle__icon {
+  line-height: 2rem;
+  position: absolute;
+  inset: 0;
+}
+
+.menu-toggle__icon--close {
+  font-size: 2.25rem;
+}
+
+.menu-toggle__icon--open {
+  font-size: 1.75rem;
+}
+
+.menu-nav__item .button {
+  margin-top: 0;
+}
+
+
+@media (min-width: 1080px) {
+  .menu-corner {
+    display: none;
+  }
+
+  .menu-nav__item {
+    position: relative;
+  }
+}
+
+@media (max-width: 1079px) {
+  .menu-nav__item {
+    width: 100%;
+  }
+  
+  /* */
+  
+  [data-dialog="closed"].menu .menu-nav {
+    display: none;
+  }
+
+  [data-dialog="closed"].menu .menu-toggle__icon--close {
+    display: none;
+  }
+
+  /* */
+
+  [data-dialog="open"].menu .menu-nav {
+    background: white;
+    filter: drop-shadow(0 16px 24px rgba(1,163,235,.05)) drop-shadow(0 2px 6px rgba(1,163,235,.04)) drop-shadow(0 0 1px rgba(0,0,0,.02));
+    flex-direction: column;
+    padding: 2rem 0 4rem;
+    position: absolute;
+    gap: 0;
+    top: 5.3rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    overflow: auto;
+  }
+
+  [data-dialog="open"].menu .menu-nav__link {
+    padding: .5rem 2rem;
+    width: 100%;
+    display: block;
+  }
+
+  [data-dialog="open"].menu .menu-nav__link:hover {
+    background: var(--color-light-blue-1);
+  }
+
+  [data-dialog="open"].menu .menu-nav__item .button {
+    margin: .6rem 2rem;
+  }
+
+  [data-dialog="open"].menu .menu-toggle__icon--open {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+/* ====================================== */ 
+/* Button */ 
+/* ====================================== */ 
+
+.button {
+  background: var(--orange);
+  border-radius: 20rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  padding: 0.65em 1.64em; 
+  text-decoration: none;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+
+.button--white {
+  background: white;
+  color: var(--dark-blue);
+}
+
+.button--small {
+  font-size: 0.875rem;
+}

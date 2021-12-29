@@ -1,0 +1,45 @@
+/* ====================================== */ 
+/* Columns */ 
+/* ====================================== */ 
+
+/* 
+ * Custom template columns for differents media queries.
+ * Use this class instead of '.grid'. Example of usage:
+ *
+ * <div class="columns" style="--columns-desktop: 3; --columns-tablet: 2; --align: center;">
+ *  <div class="content"></div>
+ * </div>
+ * 
+ * The diference between 'columns' and 'grid':
+ *  .grid: create columns automatically according with number of items.
+ *  .columns: create columns based in a grid-template-columns.
+ * 
+ */
+
+.columns {
+  --gap: 4rem;
+  --align: center;
+
+  display: grid;
+  align-items: var(--align);
+  gap: var(--gap);
+  grid-auto-rows: min-content;
+}
+
+@media (min-width: 1080px) {
+  .columns {
+    grid-template-columns: repeat(var(--columns-desktop), 1fr);
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 768px)  {
+  .columns {
+    grid-template-columns: repeat(var(--columns-tablet), 1fr);
+  }
+}
+
+@media (max-width: 767px)  {
+  .columns {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,40 @@
+/* ====================================== */ 
+/* Section */ 
+/* ====================================== */ 
+
+.section {
+  padding: 6rem 1.5rem;
+  position: relative;
+}
+
+.section--padding-bottom-0.section {
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 8rem 1.5rem;
+  }
+
+  .section--border {
+    border-color: white;
+    border-style: solid;
+    border-width: 0 1.5rem;
+  }
+}
+
+
+/* Colors */
+
+.section--light-blue {
+  background: var(--light-blue);
+}
+
+.section--dark-blue {
+  background: var(--dark-blue);
+}
+
+.section--dark-blue,
+.section--dark-blue .headline {
+  color: white;  
+}

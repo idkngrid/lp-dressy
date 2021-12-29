@@ -1,0 +1,19 @@
+/* ====================================== */ 
+/* Grid */ 
+/* ====================================== */ 
+
+.grid {
+  --align: center;
+  --gap: 4rem;
+
+  display: grid;
+  grid-auto-columns: 1fr;
+  align-items: var(--align);
+  gap: var(--gap);
+}
+
+@media (min-width: 1080px) {
+  .grid {
+    grid-auto-flow: column;
+  }
+}

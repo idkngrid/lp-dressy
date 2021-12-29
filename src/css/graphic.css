@@ -1,0 +1,47 @@
+/* 
+ * ===================================
+ * Custom graphics.
+ * ===================================
+ */
+
+.graphics > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.graphic-radial {
+  opacity: .15;
+  z-index: -3;
+}
+
+.graphic-radial--1 {
+  height: 59.25rem;
+  width: 59.25rem;
+  background: radial-gradient(50% 50% at 50% 50%, var(--cerulean) 0%, rgba(1, 163, 235, 0) 100%);
+  transform: translate(19rem, -16rem);
+}
+
+.graphic-radial--2 {
+  height: 59.25rem;
+  width: 59.25rem;
+  background: radial-gradient(50% 50% at 50% 50%, var(--indigo) 0%, rgba(62, 1, 235, 0) 100%);
+  transform: translate(44rem, 8rem);
+}
+
+.graphic-radial--3 {
+  width: 76.875rem;
+  height: 76.875rem;
+  background: radial-gradient(50% 50% at 50% 50%, var(--cerulean) 0%, rgba(1, 163, 235, 0) 100%);
+  transform: translate(-46rem, 8rem);
+}
+
+.graphic-rounded {
+  width: 37.875rem;
+  height: 37.875rem;
+  background: url(../assets/pattern.png);
+  transform: translate(25.3rem,10rem);
+  z-index: -3;
+}

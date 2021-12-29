@@ -1,0 +1,37 @@
+/* ====================================== */ 
+/* Global */ 
+/* ====================================== */ 
+
+:root {
+  --orange:     #ED6F54;
+  --cerulean:   #01a3eb;
+  --indigo:     #3E01EB;
+  --dark-blue:  #001952;
+  --light-blue: #ECF3FC;
+  --storm-gray: #656A87;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--storm-gray);
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+}
